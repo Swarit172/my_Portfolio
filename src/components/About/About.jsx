@@ -1,3 +1,4 @@
+import image from "../../assets/images/profile.jpg"
 import './About.css';
 
 const About = () => {
@@ -24,7 +25,7 @@ const About = () => {
         <div className="about-content">
           <div className="about-image">
             <div className="about-img-container">
-              <img src="/src/assets/images/profile.jpg" alt={details.name} />
+              <img src={image} alt={details.name} />
             </div>
             <div className="about-shape"></div>
           </div>
