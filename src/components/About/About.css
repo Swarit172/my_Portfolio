@@ -1,0 +1,117 @@
+.about {
+    background-color: var(--bg-primary);
+  }
+  
+  .about-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .about-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-img-container {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about-shape {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, var(--accent-color), #00c6ff);
+    transform: rotate(-5deg);
+    z-index: 1;
+  }
+  
+  .about-text {
+    flex: 1.5;
+  }
+  
+  .about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .about-text h4 {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-bio {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    white-space: pre-line;
+  }
+  
+  .about-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-detail h5 {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+  }
+  
+  .about-detail p {
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+  
+  .about-actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  @media (max-width: 992px) {
+    .about-content {
+      flex-direction: column;
+    }
+    
+    .about-image {
+      margin-bottom: 2rem;
+    }
+    
+    .about-img-container, .about-shape {
+      width: 280px;
+      height: 280px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-details {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-actions {
+      flex-direction: column;
+    }
+    
+    .about-actions .btn {
+      width: 100%;
+    }
+  }

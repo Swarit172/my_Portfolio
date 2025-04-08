@@ -1,0 +1,249 @@
+/* Education Section Styles */
+.education-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    opacity: 0;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .section-divider {
+    height: 4px;
+    width: 70px;
+    background: #3182ce;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+  }
+  
+  .section-header p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Education Container */
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .education-item {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Education Card Styles */
+  .education-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .education-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #3182ce;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .education-card-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+  }
+  
+  .education-card-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .institution-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+  }
+  
+  .institution {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3182ce;
+  }
+  
+  .location {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .duration {
+    font-size: 0.9rem;
+    color: #666;
+    display: block;
+  }
+  
+  .education-card-body p {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .details-toggle {
+    background: none;
+    border: none;
+    color: #3182ce;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .details-toggle:hover {
+    opacity: 0.8;
+  }
+  
+  .education-details {
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .achievements h4, .key-courses h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .achievements ul {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .achievements li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .achievements li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #3182ce;
+  }
+  
+  .course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .course-tag {
+    background-color: #ebf4ff;
+    color: #3182ce;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  /* Animation Classes */
+  .animate-fade-in {
+    animation: fadeIn 0.8s forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.6s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-header h2 {
+      font-size: 2rem;
+    }
+    
+    .education-card {
+      padding: 20px;
+    }
+    
+    .education-card-header h3 {
+      font-size: 1.3rem;
+    }
+    
+    .institution-info {
+      flex-direction: column;
+    }
+    
+    .institution, .location {
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .education-section {
+      padding: 60px 0;
+    }
+    
+    .course-tags {
+      gap: 5px;
+    }
+    
+    .course-tag {
+      padding: 4px 8px;
+      font-size: 0.8rem;
+    }
+  }
