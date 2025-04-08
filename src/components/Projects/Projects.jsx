@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import project1 from "../../assets/images/project1.png"
+import project2 from "../../assets/images/project2.png"
+import project3 from "../../assets/images/project3.png"
 import './Projects.css';
 
 const Projects = () => {
@@ -14,7 +17,7 @@ const Projects = () => {
             'Enhanced user security and reduced errors during registration and login processes.',
             'Implemented role-based access control for different user types.'
       ],  
-      image: '/src/assets/images/project1.png',
+      image: project1,
       technologies: ['Node.js', 'Express', 'MongoDB'],
       category: 'Backend',
       liveLink: 'https://logistics-sid2.onrender.com/',
@@ -28,7 +31,7 @@ const Projects = () => {
             'Allows users to join specific chat rooms by entering a name and room name. Users within a room can see a list of current participants.',
             'Supports multiple rooms, with a dynamic list showing all active rooms. Users can join any available room or create a new one.'
       ],  
-      image: '/src/assets/images/project3.png',
+      image: project2,
       technologies: ['JavaScript', 'Socket.IO', 'Node.js'],
       category: '',
       // liveLink: '',
@@ -42,7 +45,7 @@ const Projects = () => {
             'Enhanced user security and reduced errors during registration and login processes',
             'Developed responsive user interface to ensure compatibility across various devices.'
       ],  
-      image: '/src/assets/images/project2.png',
+      image: project3,
       technologies: ['HTML', 'CSS', 'JavaScript'],
       category: 'Static',
       liveLink: 'https://e-commerce-7zdi.onrender.com/',

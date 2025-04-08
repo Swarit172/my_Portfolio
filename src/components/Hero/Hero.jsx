@@ -1,6 +1,6 @@
-import { useContext } from 'react';
-// import { ThemeContext } from '../../context/ThemeContext';
-import './Hero.css';
+import myImage from "../../assets/images/profile.jpg"
+import leetcodeImg from "../../assets/icons/leetcode.svg"
+import './Hero.css'
 
 const Hero = () => {
   // const { darkMode } = useContext(ThemeContext);
@@ -28,7 +28,7 @@ const Hero = () => {
               <i className="fab fa-linkedin"></i>
             </a>
             <a href="https://leetcode.com/u/SAjay001" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
-              <img src="/src/assets/icons/leetcode.svg" alt="LeetCode" className="leetcode-icon" />
+              <img src={leetcodeImg} alt="LeetCode" className="leetcode-icon" />
             </a>
             <a href="https://x.com/AjaySwarit" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <i class="fa-brands fa-x-twitter"></i>
@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
         <div className="hero-image">
           <img 
-            src="/src/assets/images/profile.jpg" 
+            src={myImage}
             alt="Swarit Image" 
             // className={`profile-image ${darkMode ? 'dark-border' : ''}`}
             className='profile-image'
